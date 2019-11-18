@@ -4,8 +4,32 @@
 #content_landing{
     text-align: center;
     font-size: 2em;
+    color: white;
 }
 #content_about{
     text-align: center;
     font-size: 2em;
+    color: white;
+}
+body{
+    background-color: #232633 !important;
+    color: white;
+}
+.jumbotron{
+    text-align: center;
+    color: white;
+    margin-bottom: 0 !important;
+    background-color: #202020 !important;
+    height: 7em;
+}
+#blinker{
+    font-size: 1.5em;
+    font-family: "Courier New";
+}
+#slogan{
+    font-size: 2em;
+    font-family: "Courier New";
+}
+.nav-default{
+    background-color: #202020 !important;
 }
