@@ -1,13 +1,7 @@
-#navigation-bar{
-    text-align: center;
+#content_about{
+    display: none;
 }
-#bar{
+#content_landing{
     text-align: center;
-    color: black;
-}
-#title{
-    text-align: center;
-}
-#brand{
-
+    font-size: 2em;
 }
