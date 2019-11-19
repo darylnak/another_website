@@ -33,3 +33,6 @@ body{
 .nav-default{
     background-color: #202020 !important;
 }
+.name{
+    opacity: 0;
+}

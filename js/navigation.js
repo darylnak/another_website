@@ -1,12 +1,35 @@
+
+
 function showAbout(){
     document.getElementById("content_landing").style.display = "none";
     document.getElementById("content_about").style.display = "block";
+
+    var t1 = anime.timeline({
+        easing: 'easeOutExpo',
+        duration: 750
+    });
+
+    t1.add({
+        targets: '.name',
+        top: '20%',
+        opacity: 1,
+        duration: 500
+    });
 }
 
 function showLanding(){
-    document.getElementById("content_about").style.display = "none";
-    document.getElementById("content_landing").style.display = "block";
+    var t1 = anime.timeline({
+        easing: 'easeOutExpo',
+        duration: 750
+    });
 
+    t1.add({
+        targets: '.name',
+        top: '20%',
+        opacity: 0,
+        duration: 500
+    });
+    document.getElementById("content_landing").style.display = "block";
 }
 
 let isOn = true;
@@ -36,4 +59,3 @@ setInterval(() => {
         isOn = true;
     }
 }, speed);
-
