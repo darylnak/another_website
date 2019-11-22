@@ -35,12 +35,19 @@ function showLanding(){
 let isOn = true;
 const speed = 650;
 let i = 0;
-const txt = 'Made for humans';
+let txt = 'Made for humans';
 let randTypeTime = Math.floor(Math.random() + 40) + 30;
 
 window.onload = function typeWriter() {
+    let page = document.getElementById("slogan");
+
+    if(page == null) {
+        page = document.getElementById("abt");
+        txt = 'About';
+    }
+
     if (i < txt.length) {
-        document.getElementById("slogan").innerHTML += txt.charAt(i);
+        page.innerHTML += txt.charAt(i);
         i++;
         randTypeTime = Math.floor(Math.random() * 80) + 60;
         setTimeout(typeWriter, randTypeTime);
@@ -50,7 +57,11 @@ window.onload = function typeWriter() {
 active = false;
 
 setInterval(() => {
-    if(isOn && document.getElementById("slogan").textContent.localeCompare(txt) == 0){
+    if(isOn && document.getElementById("slogan") && document.getElementById("slogan").textContent.localeCompare(txt) === 0) {
+        document.getElementById("blinker").style.opacity = 0;
+        isOn = false;
+    }
+    else if (isOn && document.getElementById("abt").textContent.localeCompare(txt) === 0){
         document.getElementById("blinker").style.opacity = 0;
         isOn = false;
     }
