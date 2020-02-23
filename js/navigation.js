@@ -35,21 +35,21 @@ function showLanding(){
 let isOn = true;
 const speed = 650;
 let i = 0;
-let txt = 'Made for humans';
-let randTypeTime = Math.floor(Math.random() + 40) + 30;
+let txt = 'Daryl Nakamoto';
+let randTypeTime = Math.floor(Math.random() * 80) + 50;
 
 window.onload = function typeWriter() {
     let page = document.getElementById("slogan");
 
     if(page == null) {
         page = document.getElementById("abt");
-        txt = 'About';
+        txt = 'Projects';
     }
 
     if (i < txt.length) {
         page.innerHTML += txt.charAt(i);
         i++;
-        randTypeTime = Math.floor(Math.random() * 80) + 60;
+        randTypeTime = Math.floor(Math.random() * 80) + 50;
         setTimeout(typeWriter, randTypeTime);
     }
 }

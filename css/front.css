@@ -36,3 +36,12 @@ body{
 .name{
     opacity: 0;
 }
+
+#brand{
+    font-family: "Courier New";
+}
+
+#status{
+    color: #aaaeb5;
+    text-align: center;
+}
