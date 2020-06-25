@@ -11,12 +11,71 @@
 .me-card {
   background-color: inherit;
   color: aliceblue;
-  height: 12em;
+  height: 16em;
 }
 .me-school { 
-  color: rgb(139, 139, 139);
+  color: #FFCD00;
   text-decoration: none !important;
+  position: relative;
 }
 .me-school:hover { 
-  color: rgb(117, 117, 117);
-} 
+  color: #FFCD00;
+}
+.me-school:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #caa200;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.me-school:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.me-department { 
+  color: #FFCD00;
+  text-decoration: none !important;
+  position: relative;
+}
+.me-department:hover { 
+  color: #FFCD00;
+}
+.me-department:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #caa200;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.me-department:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.navigate{
+  color: aliceblue;
+  background-color: black;
+  margin-left: 0;
+  margin-right: 0;
+}
+.logo{
+  background: url('../imgs/logo.png');
+    height: 60px;
+    width: 80px;
+    display: block;
+    /* Other styles here */
+}
+.home{
+  font-family: "Courier New";
+  font-weight: 600;
+  color: white;
+}
