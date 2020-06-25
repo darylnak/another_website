@@ -79,3 +79,8 @@
   font-weight: 600;
   color: white;
 }
+/* This only changes this particular animation duration */
+.animate__animated.animate__fadeIn {
+  --animate-duration: 1.4s;
+  --animate-delay:.1s;
+}
