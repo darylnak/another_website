@@ -11,7 +11,7 @@
 .me-card {
   background-color: inherit;
   color: aliceblue;
-  height: 16em;
+  height: 20em;
 }
 .me-school { 
   color: #FFCD00;
@@ -59,7 +59,7 @@
 }
 .me-department:hover:after { 
   width: 100%; 
-  left: 0; 
+  left: 0;
 }
 .navigate{
   color: aliceblue;
@@ -83,4 +83,11 @@
 .animate__animated.animate__fadeIn {
   --animate-duration: 1.4s;
   --animate-delay:.1s;
+}
+.card-text-size{
+  font-size: 1.05em;
+}
+#me-pic{
+  width: 18em;
+  height: 18em;
 }
