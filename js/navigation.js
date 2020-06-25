@@ -49,7 +49,7 @@ window.onload = function typeWriter() {
     if (i < txt.length) {
         page.innerHTML += txt.charAt(i);
         i++;
-        randTypeTime = Math.floor(Math.random() * 80) + 20;
+        randTypeTime = Math.floor(Math.random() * 80) + 200;
         setTimeout(typeWriter, randTypeTime);
     }
 }
