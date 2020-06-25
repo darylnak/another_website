@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/bootstrap.min.js" ></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="js/navigation.js"></script>
@@ -12,7 +13,7 @@
 
 </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark nav-default">
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
             <a id="brand" class="navbar-brand" href="index.html">cd ~</a>
 <!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
 <!--                <span class="navbar-toggler-icon"></span>-->
@@ -35,15 +36,21 @@
             </div>
         </nav>
 
-        <div class="jumbotron d-flex align-items-center justify-content-center">
-            <p id="slogan" onload="typeWriter()"></p>
-            <span id="blinker">▃</span>
+        <div class="container">
+            <div class="row">
+                <div class="col jumbotron d-flex align-items-center justify-content-center">
+                    <p id="slogan" onload="typeWriter()"></p>
+                    <span id="blinker">▃</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <div class="align-vert"><img id="me-pic" src="./imgs/me_web.jpg" alt="A picture of me is suppose to be here" class="me-border">
+                        <!-- EMPTY -->
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div id="content_landing" class="container">
-        </div>
-        <div>
-            <p id="status">Status: In development</p>
-        </div>
     </body>
 </html>
