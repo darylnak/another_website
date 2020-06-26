@@ -91,3 +91,29 @@
   width: 18em;
   height: 18em;
 }
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: #B6B6B6;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
+}
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  position: relative;
+}
+.navbar-toggler .top-bar {
+  position: absolute;
+  transform: rotate(-45deg) translateY(0);
+}
+.navbar-toggler .bottom-bar {
+  transform: rotate(45deg) translateY(0);
+}
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0deg) translateY(-.2em);
+}
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0deg) translateY(.2em);
+}
