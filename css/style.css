@@ -1,11 +1,11 @@
 .me-border {
   border-radius: 100%;
-  border: 0.1em solid rgba(255, 255, 255, 0.075);
-  background: rgba(255, 255, 255, 0.075);
   vertical-align:middle;
   width: 14em;
   height: 14em;
   padding:.1em;
+  /* border: 0.1em solid rgba(255, 255, 255, 0.01);
+  background: rgba(255, 255, 255, 0.01); */
 }
 
 .me-card {
@@ -19,7 +19,7 @@
   position: relative;
 }
 .me-school:hover { 
-  color: #FFCD00;
+  color: rgb(255, 205, 0);
 }
 .me-school:after {    
   background: none repeat scroll 0 0 transparent;
