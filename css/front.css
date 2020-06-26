@@ -12,14 +12,16 @@
     color: white;
 }
 body{
-    background-color: #202021 !important;
+    /* background-color: #202021 !important; */
+    background-color: rgb(23, 23, 23) !important;
     color: white;
 }
 .jumbotron{
     text-align: center;
     color: white;
     margin-bottom: 0 !important;
-    background-color: #202020 !important;
+    /* background-color: #202020 !important; */
+    background-color: rgb(23, 23, 23) !important;
     height: 7em;
 }
 #blinker{

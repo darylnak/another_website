@@ -117,3 +117,6 @@
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0deg) translateY(.2em);
 }
+.nav-color {
+  background-color: #202020;
+}
