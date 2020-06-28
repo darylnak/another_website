@@ -15,6 +15,7 @@
 }
 .me-school { 
   color: #FFCD00;
+  display: inline-block;
   text-decoration: none !important;
   position: relative;
 }
@@ -101,6 +102,7 @@
 }
 .navbar-toggler {
   border: none;
+  outline: none !important;
   background: transparent !important;
   position: relative;
 }
