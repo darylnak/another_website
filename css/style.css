@@ -1,3 +1,6 @@
+body{
+  padding-top: 3.5em;
+}
 .me-border {
   border-radius: 100%;
   vertical-align:middle;
@@ -122,5 +125,6 @@
   transform: rotate(0deg) translateY(.2em);
 }
 .nav-color {
-  background-color: #202020;
+  background-color: #202020e1;
+  backdrop-filter: blur(1em);
 }
