@@ -127,4 +127,6 @@ body{
 .nav-color {
   background-color: #202020e1;
   backdrop-filter: blur(1em);
+  -webkit-backdrop-filter: blur(1em);
+  -moz-backdrop-filter: blur(1em);
 }

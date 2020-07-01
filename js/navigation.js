@@ -32,26 +32,24 @@ function showLanding(){
     document.getElementById("content_landing").style.display = "block";
 }
 
-let isOn = true;
-const speed = 650;
-let i = 0;
-let txt = 'Daryl Nakamoto';
-let randTypeTime = Math.floor(Math.random() * 80) + 20;
-
 window.onload = function typeWriter() {
     let page = document.getElementById("slogan");
+    let isOn = true;
+    const speed = 650;
+    let idx = 0;
+    let txt = 'Daryl Nakamoto';
+    let randTypeTime = Math.floor(Math.random() * 80) + 20;
 
-    if(page == null) {
-        page = document.getElementById("abt");
-        txt = 'Projects';
-    }
-
-    if (i < txt.length) {
-        page.innerHTML += txt.charAt(i);
-        i++;
+    while (idx < txt.length) {
+        typeChar(txt, page, idx)
+        idx++;
         randTypeTime = Math.floor(Math.random() * 80) + 20;
-        setTimeout(typeWriter, randTypeTime);
+        setTimeout(typeChar, randTypeTime);
     }
+}
+
+function typeChar(txt, page, idx) {
+    page.innerHTML += txt.charAt(idx);
 }
 
 active = false;
