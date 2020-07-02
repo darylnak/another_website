@@ -32,19 +32,26 @@ function showLanding(){
     document.getElementById("content_landing").style.display = "block";
 }
 
+
+let page = document.getElementById("slogan");
+let isOn = true;
+const speed = 650;
+let i = 0;
+let txt = 'Daryl Nakamoto';
+let randTypeTime = Math.floor(Math.random() * 80) + 20;
+
 window.onload = function typeWriter() {
     let page = document.getElementById("slogan");
-    let isOn = true;
-    const speed = 650;
-    let idx = 0;
-    let txt = 'Daryl Nakamoto';
-    let randTypeTime = Math.floor(Math.random() * 80) + 20;
+    if(page == null) {
+        page = document.getElementById("abt");
+        txt = 'Projects';
+    }
 
-    while (idx < txt.length) {
-        typeChar(txt, page, idx)
-        idx++;
+    if (i < txt.length) {
+        page.innerHTML += txt.charAt(i);
+        i++;
         randTypeTime = Math.floor(Math.random() * 80) + 20;
-        setTimeout(typeChar, randTypeTime);
+        setTimeout(typeWriter, randTypeTime);
     }
 }
 

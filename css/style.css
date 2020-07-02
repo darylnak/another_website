@@ -130,3 +130,7 @@ body{
   -webkit-backdrop-filter: blur(.5em);
   -moz-backdrop-filter: blur(.5em);
 }
+.soc-med {
+  display: inline-block !important;
+  float: left !important;
+}
