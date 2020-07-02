@@ -75,3 +75,19 @@ setInterval(() => {
         isOn = true;
     }
 }, speed);
+
+$(document).ready(function() {
+    if($(window).width() <= 767) {
+        $('#last-ico').removeClass('soc-med');
+    }else{
+        $('#last-ico').addClass('soc-med');
+    }
+});
+
+$(window).on('resize', function() {
+    if($(window).width() <= 767) {
+        $('#last-ico').removeClass('soc-med');
+    }else{
+        $('#last-ico').addClass('soc-med');
+    }
+})

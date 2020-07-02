@@ -130,7 +130,12 @@ body{
   -webkit-backdrop-filter: blur(.5em);
   -moz-backdrop-filter: blur(.5em);
 }
-.soc-med {
-  display: inline-block !important;
-  float: left !important;
+.nav-item{
+  text-align: right;
+}
+.soc-med{
+  margin-right: 1em;
+}
+#last-ico {
+  margin-right: 0em;
 }
