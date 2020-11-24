@@ -1,14 +1,23 @@
 body{
   padding-top: 3.5em;
 }
-div#preloaded-images {
-   position: absolute;
-   overflow: hidden;
-   left: -9999px; 
-   top: -9999px;
-   height: 1px;
-   width: 1px;
-}
+@media screen {
+	div#preloader {
+		position: absolute;
+		left: -9999px;
+		top:  -9999px;
+		}
+	div#preloader img {
+		display: block;
+		}
+	}
+@media print {
+	div#preloader, 
+	div#preloader img {
+		visibility: hidden;
+		display: none;
+		}
+	}
 .me-border {
   border-radius: 100%;
   vertical-align:middle;
